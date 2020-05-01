@@ -27,6 +27,7 @@ function layoutAuth({ children }){
 	          	<link rel="stylesheet" href="css/authentication.css" />
 	          	<link rel="stylesheet" href="css/color_skins.css" />
 	          	<script src="js/client_platform.js" />
+
 	        </Head>
 				{ children }
 			<script/>
