@@ -22,7 +22,6 @@ function layoutAuth({ children }){
 	          	<meta name="description" content="Responsive Bootstrap 4 and web Application ui kit." />
 	          	<title>App Chat Kỳ Smile</title>
 	          	<link rel="icon" href="favicon.ico" type="image/x-icon" />
-	          	<link rel="stylesheet" href="plugins/bootstrap/css/bootstrap.min.css" />
 	          	<link rel="stylesheet" href="css/main.css" />
 	          	<link rel="stylesheet" href="css/authentication.css" />
 	          	<link rel="stylesheet" href="css/color_skins.css" />
