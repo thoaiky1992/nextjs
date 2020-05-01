@@ -2,10 +2,10 @@ import { useEffect } from 'react';
 import { useRouter } from 'next/router'; 
 import LayoutAuth from '../components/layout/auth'; 
 import NavbarAuth from '../components/auth/navbar';
-import Login from '../components/auth/Login';
+import RegisterAuth from '../components/auth/Register';
 import { useSelector , useDispatch } from 'react-redux';
 import $ from 'jquery'; 
-function IndexPage() { 
+function Register() { 
     const router = useRouter() 
     const conter = useSelector(state => state.counter.value) 
     const dispatch = useDispatch(); 
@@ -23,8 +23,8 @@ function IndexPage() {
     return (
 
     <LayoutAuth>
-        <NavbarAuth btn="Đăng Ký"/>
-        <Login/>
+        <NavbarAuth btn="Đăng Nhập"/>
+        <RegisterAuth/>
     </LayoutAuth>
 )}
- export default IndexPage
+export default Register

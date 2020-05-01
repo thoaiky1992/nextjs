@@ -1,5 +1,10 @@
 
-function NavbarAuth() {
+import { useRouter } from 'next/router'; 
+function NavbarAuth({btn}) {
+    const router = useRouter() 
+    function handleRedirect(){
+        (btn === 'Đăng Ký') ? router.push('/register') : router.push('/index')
+    }
 	return (
 		<nav className="navbar navbar-expand-lg fixed-top navbar-transparent">
             <div className="container">
@@ -31,7 +36,7 @@ function NavbarAuth() {
                             </a>
                         </li>
                         <li className="nav-item">
-                            <a className="nav-link btn btn-primary btn-round" href="sign-up.html">SIGN UP</a>
+                            <a onClick={handleRedirect} className="nav-link btn btn-primary btn-round">{btn}</a>
                         </li>
                     </ul>
                 </div>
